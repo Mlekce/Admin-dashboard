@@ -97,7 +97,7 @@ main {
     height: 70px;
     width: 70px;
     border-radius: 100%;
-    background-color: rgb(233, 231, 95);
+    background-color: rgb(231, 167, 29);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -105,14 +105,13 @@ main {
 
 input {
     border: 2px solid var(--sky-white);
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     border-radius: 10px;
-    background-color: #e0f2fe;
+    background-color: #edf2f5;
     width: 100%;
 }
 
 form {
-    border: 1px solid red;
     width: 100%;
 }
 
@@ -120,14 +119,74 @@ form {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
+    padding: 10px 0px;
+    box-sizing: border-box;
 }
 
 .top-container div {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid red;
     padding: 0 20px;
     flex: 1;
     gap: 1rem;
+}
+
+div.notification-area {
+    justify-content: center;
+    gap: 2rem;
+}
+
+div.notification-area span:first-child {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+div.notification-area span.img-simulation {
+    width: 55px;
+    height: 55px;
+}
+
+div.notification-area p {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+div.profile-info {
+    padding: 0;
+    margin: 0;
+    gap: 0;
+}
+
+div.profile-info .avatar {
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+div.profile-info .info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0;
+    padding: 0;
+}
+
+#links {
+    gap: 2rem;
+    justify-content: center;
+
+}
+
+#links a {
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5rem 2rem;
+    background-color: #0284c7;
+    border-radius: 0.8rem;
+}
+
+.bottom-container {
+    background-color: #e0f2fe;
+    height: 100%;
 }
