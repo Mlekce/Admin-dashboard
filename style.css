@@ -1,0 +1,56 @@
+/* MATERIAL ICONS */
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons-outlined.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons-outlined.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons-outlined.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+/* GENERAL */
+
+body {
+    max-height: 100vh;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+main {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+
+#main-left {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 1fr 1fr;
+    background-color: #0ea5e9;
+}
+
+#main-left .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    border: 1px solid green;
+}
+
+#main-left .container div {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    border: 1px solid green;
+    align-items: center;
+    justify-content: center;
+}
+
+#main-left .container div > span {
+    text-align: center;
+}
