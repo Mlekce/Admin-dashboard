@@ -11,7 +11,7 @@
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600;700&display=swap" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
     <title>Admin Dashboard</title>
@@ -20,23 +20,56 @@
     <main>
         <aside id="main-left">
             <section class="container">
-
+                <div><span class="material-symbols-outlined md-48">dashboard</span><p>Dashboard</p></div> 
             </section>
             <section class="container">
                 <div><span class="material-symbols-outlined md-24 md-light">groups</span><p>Home</p></div>
-                <div><span class="material-symbols-outlined">groups</span><p>Profile</p></div>
-                <div><span class="material-symbols-outlined">groups</span><p>Messages</p></div>
+                <div><span class="material-symbols-outlined">problem</span><p>Profile</p></div>
+                <div><span class="material-symbols-outlined">chat</span><p>Messages</p></div>
                 <div><span class="material-symbols-outlined">schedule</span><p>History</p></div>
-                <div><span class="material-symbols-outlined">groups</span><p>Tasks</p></div>
+                <div><span class="material-symbols-outlined">content_copy</span><p>Tasks</p></div>
                 <div><span class="material-symbols-outlined">groups</span><p>Communities</p></div>
             </section>
             <section class="container">
                 <div><span class="material-symbols-outlined">settings</span><p>Settings</p></div>
-                <div></div>
-                <div></div>
+                <div><span class="material-symbols-outlined">beenhere</span><p>Privacy</p></div>
+                <div><span class="material-symbols-outlined">security</span><p>Support</p></div>
             </section>
         </aside>
-        <section id="main-right"></section>
+        <section id="main-right">
+            <section class="top-container">
+                <div>
+                    <div class="search">
+                        <span class="material-symbols-outlined">search</span>
+                        <form action="#" method="get">
+                            <input type="text" name="search" id="search" placeholder="Search...">
+                        </form>
+                    </div>
+                    <div class="notification-area">
+                        <span class="material-symbols-outlined">notifications</span>
+                        <span class="img-simulation">Img</span>
+                        <p>Morgan Oakley</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="profile-info">
+                        <div class="avatar">
+                            <span class="img-simulation">Img</span>
+                        </div>
+                        <div class="info">
+                            <h4>Hi there,</h4>
+                            <h2>Morgan Oakley (@morgan)</h2>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#">New</a>
+                        <a href="#">Upload</a>
+                        <a href="#">Share</a>
+                    </div>
+                </div>
+            </section>
+            <section class="bottom-container"></section>
+        </section>
     </main>
 </body>
 </html>

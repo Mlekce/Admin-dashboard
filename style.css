@@ -6,14 +6,29 @@
 .material-icons.md-36 { font-size: 36px; }
 .material-icons.md-48 { font-size: 48px; }
 
-/* Rules for using icons as white on a dark background. */
-.material-icons-outlined.md-light { color: rgba(255, 255, 255, 1); }
-.material-icons-outlined.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+.material-symbols-outlined.md-18 { font-size: 18px; }
+.material-symbols-outlined.md-24 { font-size: 24px; }
+.material-symbols-outlined.md-36 { font-size: 36px; }
+.material-symbols-outlined.md-48 { font-size: 48px; }
 
 /* GENERAL */
 
+:root {
+    --sky-white: #f0f9ff;
+    --sky-blue: #e0f2fe; 
+    --sky-powder: #7dd3fc;
+    --sky-black: #082f49;
+    --sky-background: #0ea5e9;
+    --sky-shade-blue: #0284c7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    max-height: 100vh;
+    min-height: 100vh;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -26,31 +41,93 @@ main {
     margin: 0;
     display: grid;
     grid-template-columns: 1fr 5fr;
-    border: 1px solid red;
     box-sizing: border-box;
+    min-height: 100vh;
 }
+
+/* ASIDE LEFT */
 
 #main-left {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.3fr 1fr 1fr;
+    grid-template-rows: 0.3fr 1fr 1fr 1fr;
+    gap: 1.5rem;
     background-color: #0ea5e9;
 }
 
 #main-left .container {
     display: grid;
     grid-template-columns: 1fr;
-    border: 1px solid green;
 }
 
 #main-left .container div {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    border: 1px solid green;
     align-items: center;
     justify-content: center;
+    color: #fff;
+    font-weight: 600;
 }
 
 #main-left .container div > span {
     text-align: center;
+}
+
+.container:first-child span {
+    font-size: 56px;
+}
+
+.container:first-child p{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.container:first-child div{
+    padding: 0 10px;
+}
+
+.container:last-child {
+    align-self: center;
+    gap: 1rem;
+}
+
+/* MAIN RIGHT */
+.img-simulation {
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    background-color: rgb(233, 231, 95);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    border: 2px solid var(--sky-white);
+    font-size: 1.2rem;
+    border-radius: 10px;
+    background-color: #e0f2fe;
+    width: 100%;
+}
+
+form {
+    border: 1px solid red;
+    width: 100%;
+}
+
+.top-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.top-container div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid red;
+    padding: 0 20px;
+    flex: 1;
+    gap: 1rem;
 }
